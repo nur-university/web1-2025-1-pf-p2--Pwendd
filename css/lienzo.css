@@ -1,0 +1,29 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(186, 186, 30);
+}
+
+.redes {
+    width: 100px;
+}
+
+@media(min-width:1024px) {
+    main {
+        min-height: 1250px;
+    }
+}
