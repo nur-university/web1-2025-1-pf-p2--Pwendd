@@ -1,0 +1,163 @@
+header {
+    background-color: rgb(186, 186, 30);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.menu h1 {
+    margin-bottom: 10px;
+}
+
+.zann {
+    width: 30%;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 95px;
+    width: 100%;
+}
+
+.botones-nav {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.botones-nav input {
+    width: 45%;
+    background-color: #FF7701;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    height: 35px;
+    font-size: 20px;
+}
+
+.botones-nav input:hover {
+    background-color: #d46e15;
+}
+
+.menu #menu-switch {
+    display: none;
+    text-align: center;
+}
+
+.menu #menu-switch:checked+ul {
+    display: block;
+}
+
+.menu ul li {
+    list-style: none;
+    width: 70%;
+    border: 1px solid black;
+    background-color: #FF7701;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu label {
+    text-align: center;
+    width: 70%;
+    background-color: rgb(186, 186, 30);
+}
+
+.menu i {
+    font-size: 40px;
+    color: #FF7701;
+}
+
+@media (min-width:768px) {
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0%;
+    }
+
+    .menu ul li {
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .hamburguesa {
+        display: none;
+    }
+
+    .zann {
+        width: 100px;
+        order: 1;
+    }
+
+    .menu h1 {
+        order: 2;
+        text-align: center;
+        margin: auto;
+    }
+
+    .menu-lista {
+        order: 3;
+    }
+
+    .botones-nav {
+        margin-top: 30px;
+        order: 4;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .botones-nav input {
+        width: 30%;
+    }
+}
+
+@media(min-width:1024px) {
+    .menu {
+        flex-wrap: nowrap;
+    }
+    .menu h1{
+        width: 20%;
+        margin: 0px;
+    }
+
+    .menu ul {
+        width: 35%;
+    }
+
+    .botones-nav {
+        margin-top: 20px;
+        width: 30%;
+    }
+
+    .botones-nav input {
+        width: 70%;
+    }
+}

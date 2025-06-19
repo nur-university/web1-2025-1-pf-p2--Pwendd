@@ -1,0 +1,51 @@
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0px;
+    width: 70%;
+    text-align: center;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes {
+    font-size: 30px;
+}
+
+#facebook {
+    color: blue;
+}
+
+#twiter {
+    color: rgb(255, 255, 255);
+}
+
+#insta {
+    color: black;
+}
+
+.redes a {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+@media(min-width:1024px) {
+    footer{
+        font-size: 30px;
+    }
+}

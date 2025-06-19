@@ -1,0 +1,121 @@
+.principal {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.principal h2{
+    font-weight: bold;
+}
+
+.principal .productos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal .productos .img-producto {
+    width: 90%;
+}
+
+.precio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.autor,
+.categoria {
+    font-weight: bold;
+}
+
+.precio p {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.credito {
+    margin-left: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.productos .botones-producto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.productos {
+    font-size: 20px;
+}
+
+.productos a{
+    text-align: center;
+    width: 100%;
+}
+.ver-mas {
+    background-color: #FF7701;
+    width: 60%;
+    height: 35px;
+    font-size: 20px;
+}
+
+.ver-mas:hover{
+    background-color: #d46e15;
+}
+
+.productos .botones-producto button {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.botones-producto .btn-save {
+    background-color: rgb(231, 231, 12);
+}
+
+.botones-producto .btn-msg {
+    background-color: #cf6b14;
+}
+
+@media (min-width:768px) {
+    .principal {
+        margin-top: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .principal h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .principal .productos {
+        width: 40%;
+        border: 3px solid #FF7701;
+        padding: 15px;
+    }
+
+    .principal .productos .img-producto {
+        width: 80%;
+        height: 235px;
+    }
+}
+@media(min-width:1024px){
+    .productos{
+        width: 100%;
+        min-height: 446px;
+        padding: 0px;
+    }
+    .principal h2{
+        font-size: 30px;
+    }
+}
